@@ -12,8 +12,8 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="signin" element={<SignIn />} />
-        <Route path="login" element={<UserDashboard />} />
+        <Route path="/login" element={<SignIn />} />
+        <Route path="/profile" element={<UserDashboard />} />
       </Routes>
       <Footer />
     </div>

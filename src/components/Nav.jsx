@@ -21,7 +21,7 @@ const Nav = () => {
       <div>
         {isAuthenticated ? (
           <>
-            <Link className="main-nav-item" to="/login">
+            <Link className="main-nav-item" to="/profile">
               <i className="fa fa-user-circle"></i>
               Profile
             </Link>
@@ -31,7 +31,7 @@ const Nav = () => {
             </button>
           </>
         ) : (
-          <Link className="main-nav-item" to="/signin">
+          <Link className="main-nav-item" to="/login">
             <i className="fa fa-user-circle"></i>
             Sign In
           </Link>

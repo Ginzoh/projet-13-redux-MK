@@ -8,13 +8,13 @@ const SignIn = () => {
   const [password, setPassword] = useState('');
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { isLoading, error } = useSelector((state) => state.auth); // Get status and error from auth state
+  const { isLoading, error } = useSelector((state) => state.auth);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const action = await dispatch(loginUser({ email: username, password }));
-    if (action.type === 'auth/loginUser/fulfilled') { // Update action type
-      navigate('/login');
+    if (action.type === 'auth/loginUser/fulfilled') {
+      navigate('/profile');
     }
   };
   return (
